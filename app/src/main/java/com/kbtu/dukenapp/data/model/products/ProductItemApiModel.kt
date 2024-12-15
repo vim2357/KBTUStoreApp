@@ -1,6 +1,9 @@
 package com.kbtu.dukenapp.data.model.products
 
+import com.google.gson.annotations.SerializedName
+
 data class ProductItemApiModel(
+    @SerializedName("productId")
     val productId: Int?,
     val name: String?,
     val description: String?,

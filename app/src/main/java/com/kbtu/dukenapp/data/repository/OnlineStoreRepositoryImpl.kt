@@ -14,7 +14,7 @@ class OnlineStoreRepositoryImpl(
     private val mapper: ProductsMapper
 ) : OnlineStoreRepository {
 
-    override suspend fun getCharacters(): Response<List<ProductItem>> = mapper.map(
+    override suspend fun getProductList(): Response<List<ProductItem>> = mapper.map(
         try {
             withContext(Dispatchers.IO) {
                 val data = service.getProductList()

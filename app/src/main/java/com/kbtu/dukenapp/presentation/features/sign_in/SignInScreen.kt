@@ -18,10 +18,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
-import com.kbtu.dukenapp.presentation.common.CustomEmailTextField
-import com.kbtu.dukenapp.presentation.common.CustomPasswordTextField
 import com.kbtu.dukenapp.presentation.common.CustomYellowButton
+import com.kbtu.dukenapp.presentation.common.EmailField
 import com.kbtu.dukenapp.presentation.common.LoaderPopup
+import com.kbtu.dukenapp.presentation.common.PasswordField
 import com.kbtu.dukenapp.presentation.model.TextFieldUiState
 import com.kbtu.dukenapp.ui.theme.Paddings
 import com.kbtu.dukenapp.utils.Screen
@@ -134,20 +134,3 @@ private fun LoginFields(
     )
 }
 
-@Composable
-private fun PasswordField(
-    password: TextFieldUiState
-) {
-    Text(text = "Password")
-    Spacer(modifier = Modifier.height(Paddings.small))
-    CustomPasswordTextField(password)
-}
-
-@Composable
-private fun EmailField(
-    email: TextFieldUiState
-) {
-    Text(text = "Email")
-    Spacer(modifier = Modifier.height(Paddings.small))
-    CustomEmailTextField(email)
-}

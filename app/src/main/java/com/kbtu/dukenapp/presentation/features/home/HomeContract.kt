@@ -7,13 +7,13 @@ import com.kbtu.dukenapp.presentation.mvi.UiEvent
 import com.kbtu.dukenapp.presentation.mvi.UiState
 
 interface HomeContract {
-    sealed interface Event : UiEvent
+    sealed interface Event : UiEvent // input
 
     data class State(
         val productList: ResourceUiState<List<ProductItem>>
     ) : UiState
 
-    sealed interface Effect : UiEffect
+    sealed interface Effect : UiEffect // output
 }
 
 
