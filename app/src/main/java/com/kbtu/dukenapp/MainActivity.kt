@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.systemBars
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.kbtu.dukenapp.presentation.features.main.navigation.AppNavigation
 import com.kbtu.dukenapp.ui.theme.white
 import com.kbtu.dukenapp.utils.Navigation
 
@@ -33,8 +34,9 @@ class MainActivity : ComponentActivity() {
                     .fillMaxSize()
                     .padding(WindowInsets.systemBars.asPaddingValues())
             ) {
-                Navigation()
+                AppNavigation()
             }
         }
     }
 }
+

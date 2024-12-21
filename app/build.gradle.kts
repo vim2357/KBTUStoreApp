@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
     id("kotlin-parcelize")
+//    kotlin("plugin.serialization") version "1.9.2"
 }
 
 android {
@@ -66,6 +67,8 @@ dependencies {
 
     // Navigation
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.play.services.analytics.impl)
 
     // Testing
     testImplementation(libs.junit)
@@ -101,4 +104,11 @@ dependencies {
 
     // Accompanist
     implementation(libs.accompanist.systemuicontroller.v0315beta)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation("androidx.compose.material3:material3:1.1.1")
+    implementation("androidx.compose.ui:ui:1.5.1")
+    implementation("androidx.compose.foundation:foundation:1.5.1")
+
+
 }

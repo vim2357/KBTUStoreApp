@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface OnlineStoreService {
 
-    @GET("6719602b-11ae-43ae-bc30-78cd1d930714")
+    @GET("69252c19-0085-4a44-87a5-85b073f15aef")
     suspend fun getProductList(): ProductsApiModel
 }
